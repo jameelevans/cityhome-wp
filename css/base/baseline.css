@@ -1,0 +1,173 @@
+@define-mixin atXSmall {
+  @media (min-width: 391px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmall {
+  @media (min-width: 530px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmallMedium2 {
+  @media (min-width: 650px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atSmallMedium {
+  @media (min-width: 767px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atMedium {
+	@media(min-width: 800px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMediumLg {
+	@media(min-width: 875px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge {
+	@media(min-width: 1010px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+
+@font-face {
+  font-family: 'cityhome';
+  src:  url('fonts/cityhome.eot?af2pdf');
+  src:  url('fonts/cityhome.eot?af2pdf#iefix') format('embedded-opentype'),
+    url('fonts/cityhome.ttf?af2pdf') format('truetype'),
+    url('fonts/cityhome.woff?af2pdf') format('woff'),
+    url('fonts/cityhome.svg?af2pdf#cityhome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cityhome' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-google:before {
+  content: "\f1a0";
+}
+.icon-facebook:before {
+  content: "\f39e";
+}
+.icon-home-alt:before {
+  content: "\f015";
+}
+.icon-clock:before {
+  content: "\f017";
+}
+.icon-phone:before {
+  content: "\f095";
+}
+.icon-envelope:before {
+  content: "\f0e0";
+}
+.icon-shield:before {
+  content: "\f2f8";
+}
+.icon-reports:before {
+  content: "\f316";
+}
+.icon-search:before {
+  content: "\f002";
+}
+.icon-up:before {
+  content: "\f077";
+}
+.icon-down:before {
+  content: "\f078";
+}
+.icon-bolt:before {
+  content: "\f0e7";
+}
+.icon-thermometer:before {
+  content: "\f2c9";
+}
+.icon-bath:before {
+  content: "\f2cd";
+}
+.icon-user:before {
+  content: "\f4fc";
+}
+.icon-bricks:before {
+  content: "\f664";
+}
+.icon-house-flood:before {
+  content: "\f74f";
+}
+.icon-roof:before {
+  content: "\f78b";
+}
+.icon-home:before {
+  content: "\f80b";
+}
+.icon-phone-alt:before {
+  content: "\f096";
+}
+.icon-envelope-alt:before {
+  content: "\f0e2";
+}
+
+
+
+
+body {
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $mainBlue;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p, ul, ol {
+  margin: 0 0 1.65em 0;
+}
+
+p, li {
+  line-height: 1.65;
+}

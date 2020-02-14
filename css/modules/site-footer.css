@@ -1,0 +1,157 @@
+.footer{
+
+  &-top{
+    background-color: $mainGreen;
+    padding: 28px 0;
+
+
+    p{
+      margin: 0;
+      text-align: center;
+      font-weight: 600;
+      line-height: 35px;
+      color: $mainWhite;
+
+    }
+
+    .btn{
+      display: block;
+      margin-left: 15px;
+
+      @mixin atSmallMedium{
+        display: inline;
+      }
+
+
+    }
+  }
+
+  &-mid {
+    padding: 70px 0;
+    background: $altBlack;
+    color: #636363;
+
+    p {
+      font-size: 14px;
+      padding-right: 20px;
+    }
+
+    h4 {
+      color: $mainWhite;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+    }
+
+    nav{
+      padding-right: 35px;
+    }
+
+    ul{
+      padding-left: 0;
+
+      li{
+        list-style: none;
+        padding: 6px 0px;
+        border-bottom: 1px solid #363636;
+
+        &:first-child{
+          border-top: 1px solid #363636;
+        }
+
+        a{
+          text-decoration: none;
+          font-size: 14px;
+          color: #636363;
+          transition: color .2s ease-in-out;
+
+          &:hover{
+            color: $mainGreen;
+          }
+        }
+      }
+    }
+
+
+    &__inner {
+
+    }
+
+    &__col-one {
+      text-align: center;
+      @mixin atMedium {
+        text-align: left;
+        width: 33%;
+        float: left;
+      }
+    }
+
+    &__col-two-three-group {
+      text-align: center;
+      width: 85%;
+      margin: 0 auto;
+      @mixin atMedium {
+        text-align: left;
+        float: left;
+        width: 42%;
+        margin: 0;
+      }
+    }
+
+    &__col-two {
+      width: 50%;
+      float: left;
+    }
+    &__col-three {
+      width: 50%;
+      float: left;
+    }
+  }
+
+  &-bottom{
+    background: $mainBlack;
+    color: #989898;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0;
+    height: 40px;
+    line-height: 40px;
+
+  }
+
+  &-return-to-top {
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+    background: rgba($mainBlue, 0.7);
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    border-radius: 35px;
+    opacity: 0;
+  	visibility: hidden;
+  	transform: scale(1.2);
+    transition: all .3s ease-out;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    font-size: 22px;
+    color: $mainWhite;
+
+    &:hover{
+      background: rgba($mainBlue, 1);
+    }
+
+    .icon{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &--is-visible{
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+}

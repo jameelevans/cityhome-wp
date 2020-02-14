@@ -1,0 +1,101 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: .88rem;
+  padding: 7px 13px;
+  border: none;
+  outline: none;
+
+  &--blue-outline {
+    border: 3px solid $mainBlue;
+    margin-top: 20px;
+    background: transparent;
+    color: $mainBlue!important;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background: $mainBlue;
+      color: $mainWhite!important;
+    }
+  }
+
+  &--green-outline {
+    border: 3px solid $mainGreen;
+    background: transparent;
+    color: $mainGreen!important;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background: linear-gradient(color($mainGreen b(-16%)), $mainGreen);
+      color: $mainWhite!important;
+    }
+  }
+
+  &--red-outline {
+    border: 3px solid red;
+    background: transparent;
+    color: red!important;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      background: linear-gradient(color(red b(-16%)), red);
+      color: $mainWhite!important;
+    }
+  }
+
+
+
+  &--white-outline {
+    border: 1px solid $mainWhite;
+    background: transparent;
+    color: $mainWhite!important;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background: $mainWhite;
+      color: $medBlue!important;
+    }
+  }
+
+  &--white-round{
+    position: absolute;
+    bottom: 40px;
+    margin: auto;
+    padding: 13px;
+    border-radius: 50%;
+    font-size: 23px;
+    border: 1px solid $mainWhite;
+    height: 48px;
+    width: 48px;
+    left: 0;
+    right: 0;
+    color: $mainWhite;
+    box-sizing: border-box;
+    transition: all .3s ease-in;
+
+    &:hover{
+      border: 1px solid $mainGreen;
+      color: $mainGreen;
+    }
+  }
+
+
+
+  &--large {
+    font-size: 1.3rem;
+    padding: 16px 34px;
+    border-radius: 7px;
+    @mixin atSmall {
+      font-size: 1.9rem;
+    }
+  }
+
+  &--inactive {
+    background-color: transparent;
+    cursor: default;
+    color: #333;
+  }
+}

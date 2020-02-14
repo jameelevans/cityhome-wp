@@ -1,0 +1,69 @@
+.login {
+  background-color: $mainBlue;
+
+  & h1 a {
+    color: $mainBlue;
+    background-image: url("images/cityhome-inspections-admin-logo.png");
+    background-size: 150px;
+    height: 150px;
+    width: auto;
+    padding-bottom: 20px;
+  }
+
+  & form {
+    border-radius: 10px;
+
+    & label {
+      color: $mainBlue;
+      font-size: 16px;
+      font-weight: 100;
+    }
+
+    & input[type=checkbox]:checked:before {
+        color: $mainBlue;
+    }
+
+    & .submit{
+      display: block;
+    }
+
+    & .button-primary {
+      width: 120px;
+      background-color: $mainBlue;
+      border-color: color($mainBlue b(+10%));
+      text-shadow: 0 -1px 1px color($mainBlue b(+15%)),1px 0 1px color($mainBlue b(+15%)),0 1px 1px color($mainBlue b(+15%)),-1px 0 1px color($mainBlue b(+15%));
+      box-shadow: 0 1px 0 color($mainBlue b(+20%));
+    }
+
+    & .button-primary:active,
+    & .button-primary:focus,
+    & .button-primary:hover {
+      background-color: color($mainBlue b(+7%));
+      border-color: color($mainBlue b(+15%));
+      text-shadow: 0 -1px 1px color($mainBlue b(+20%)),1px 0 1px color($mainBlue b(+20%)),0 1px 1px color($mainBlue b(+20%)),-1px 0 1px color($mainBlue b(+20%));
+      box-shadow: 0 1px 0 color($mainBlue b(+25%));
+    }
+
+    & .forgetmenot label {
+      color: $mainBlue;
+    }
+  }
+
+  & #backtoblog a,
+  & #nav a {
+    color: $mainWhite;
+
+    &:hover {
+      color: $mainGreen;
+    }
+  }
+
+  & .privacy-policy-page-link a {
+    color: $mainGreen;
+    text-decoration: none;
+
+    &:hover {
+      color: $mainWhite;
+    }
+  }
+}

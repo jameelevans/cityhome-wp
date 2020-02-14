@@ -1,0 +1,65 @@
+.slider {
+  position: relative;
+  padding: 20px;
+  width: 100%;
+
+  @mixin atMedium{
+    position: absolute;
+    padding: 20px;
+  }
+
+
+  div {
+    outline: none;
+  }
+
+
+
+
+
+}
+
+.slick-dots {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  top: 15px;
+  @mixin atMedium {
+    top: 50px;
+  }
+}
+
+.slick-dots {
+
+  li {
+    list-style: none;
+    display: inline;
+  }
+
+  li button {
+    display: inline-block;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+    border-radius: 50%;
+    border: none;
+    margin: 0 4px;
+    padding: 0;
+    outline: none;
+    transition: background-color .3s ease-out;
+    cursor: pointer;
+  }
+
+  .slick-active button {
+    background-color: #FFF;
+  }
+
+}

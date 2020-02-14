@@ -1,0 +1,91 @@
+.full-width-split {
+  background-color: $darkBlue;
+  color: $mainWhite;
+  padding: 100px 0;
+  position: relative;
+
+
+  @mixin atMedium {
+    display: flex;
+  }
+
+  &__one {
+    flex: 1;
+    padding: 5%;
+    position: relative;
+    text-align: center;
+    @mixin atMedium {
+      padding: 5%;
+
+    }
+
+    &__inner {
+      @mixin atMedium {
+        float: right;
+      }
+    }
+  }
+
+  &__two {
+    flex: 1;
+    padding: 5%;
+
+    @mixin atMedium {
+      padding: 5%;
+    }
+
+    .banner-logo {
+        height: auto;      /* equals max image height */
+        width: auto;
+        white-space: nowrap;
+        text-align: center; margin: 1em 0;
+
+        &:before{
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        img {
+          vertical-align: middle;
+          max-height: 143px;
+          max-width: auto;
+      }
+
+      &--description{
+        width: auto;
+        border-top: $mainWhite 3px solid;
+        font-size: 20px;
+        color: $mainWhite;
+
+        &--email{
+          font-size: 17px;
+        }
+
+
+        p{
+          margin-top: 20px;
+          text-align: center;
+        }
+
+        a {
+          text-decoration: none;
+          color: $mainWhite;
+          transition: all .3s ease-in-out;
+          &:hover{
+            color: $mainGreen;
+          }
+        }
+      }
+    }
+
+
+
+  }
+
+  &__inner {
+
+
+  }
+}
